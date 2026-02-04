@@ -1,4 +1,4 @@
-# WebAutomatedTest
+# Web Automation Guide
 - Python &amp; Selenium
   - [Python&Selenium 문서](https://github.com/yjbae-ww/WebAutomatedTest/blob/main/PythonSelenium/PythonSeleniumDocument.md)
 - Selenium Grid
