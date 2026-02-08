@@ -1,30 +1,31 @@
-## Appium 설치 가이드
-### 필수 설치
+# Appium 설치 가이드
+## 필수 설치
 - 안드로이드 스튜디오
 - Appium Inspector
 - Appium Server
 - Python
 
-### 주의 사항
+## 주의 사항
 * Katalon Studio와 같이 사용할려면 Katalon 설치 가이드를 참조해서 npm으로 설치하는게 좋음
 - npm으로 Katalon 설치하는 이유: Katalon Studio에서 Appium 경로를 불려와야 하는데 npm으로 설치한 경로를 설정함
-- [KatalonSettings 문서](https://github.com/yjbae-ww/WebAutomatedTest/blob/main/Katalon/KatalonSettings.md)
+- [KatalonSettings 문서 링크](https://github.com/yjbae-ww/WebAutomatedTest/blob/main/Katalon/KatalonSettings.md)
 
-### 설치 방법
-1. JDK 설치 
-https://www.oracle.com/java/technologies/downloads/
+--- 
+## 설치 방법
+1. JDK 설치  
+ https://www.oracle.com/java/technologies/downloads/
 
 2. 환경 변수 설정
     > 시스템 > 고급 시스템 설정 > 환경 변수 > 새로 만들기
     
-    *사용자 변수 편집
+    * 사용자 변수 편집
 
     > JAVA_HOME   
     > C:\Program Files\Java\jdk-21
     
     ![사용자 변수 편집](./Resoucre/image.png)
 
-    *자바 설치 체크
+    * 자바 설치 체크
 
         > cmd > java -version
 
@@ -64,7 +65,6 @@ https://www.oracle.com/java/technologies/downloads/
     2. Appium Inspector 실행 > JSON Repersentaiton에 입력    
 
         *Remote Path 추가
-
         > /wd/hub
         *appium:udid 추가 (필수)
         ![alt text](./Resoucre/image-6.png)
@@ -77,7 +77,8 @@ https://www.oracle.com/java/technologies/downloads/
     5. JSON Repersentaiton에 입력
         > "appium:deviceName": "device정보"
 
-### 참조) JSON Repersentaiton
+--- 
+## Appium Desired Capabilities (설정값)
 ```
 "platformName" : "Android"
 "appium:appPackage":"앱 패키지명"
@@ -85,15 +86,13 @@ https://www.oracle.com/java/technologies/downloads/
 "appium:deviceName": "디바이스 종류"
 ```
 
-### 참조) JSON 값 
-- AppPackage & AppActivity 값 확인
-    > 1.cmd 창 입력   
-    > adb shell dumpsys window | find "mCurrentFocus"
-    
-    > 2.결과    
-    > mCurrentFocus=Window{xxxxx u0 AppPackage/AppActivity}
+## Appium 설정에 필요한 appPackage / appActivity 확인 방법
+ 1. cmd 창 입력   
+`adb shell dumpsys window | find "mCurrentFocus"`
+ 2. 결과    
+`mCurrentFocus=Window{xxxxx u0 AppPackage/AppActivity}`
 
-### 참조 링크
+## 참조 링크
 - [appium server GUI & Inspector 설치](https://ddbobd.tistory.com/entry/windows-AppiumServerGUI-Inspector-install)
 - [UI-테스트 자동화 : appium으로 가상 디바이스 실행하기](https://velog.io/@soyean/UI-%ED%85%8C%EC%8A%A4%ED%8A%B8-%EC%9E%90%EB%8F%99%ED%99%94-Appium%EC%9C%BC%EB%A1%9C-%EA%B0%80%EC%83%81-%EB%94%94%EB%B0%94%EC%9D%B4%EC%8A%A4-%EC%8B%A4%ED%96%89%ED%95%98%EA%B8%B0)
 - [Appium capabilities](https://appium.io/docs/en/2.0/guides/caps/)
