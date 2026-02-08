@@ -1,4 +1,4 @@
-## Selenium Grid 설치 및 실행 가이드
+# Selenium Grid 설치 및 실행 가이드
 
 1. 필수 환경 설치
     - Java JDK 설치 
@@ -66,7 +66,7 @@
     java -jar selenium-server-버전.jar node --hub http://주소:포트번호/grid/register 
     ```
 
-### 실습 : Node에서 Selenium side파일 실행
+## 실습 : Node에서 Selenium side 파일 실행
 1. cmd 창에서 허브 실행
     ```
     java -jar selenium-server-4.17.0.jar hub
@@ -98,37 +98,37 @@
 7. 테스트 통과/실패 확인
     ![image](https://github.com/yjbae-ww/WebAutomatedTest/assets/159973972/28d8e1e1-cca4-420d-bb9b-ab5f851eb5f1)
 
-### side 파일 생성법 (Hub 및 Node에서 테스트)
+## side 파일 생성법 (Hub 및 Node에서 테스트)
 1. SeleniumIDE 설치 (Chrome 웹브라우저 기준)   
-    ![alt text](image.png)   
+    ![alt text](./Resource/image.png)   
     [SeleniumIDE 설치 경로](https://chromewebstore.google.com/detail/selenium-ide/mooikfkahbdckldjjndioackbalphokd)
 
 2. SeleniumIDE 확장 프로그램 설정   
-    ![alt text](image-3.png)
+    ![alt text](./Resource/image-3.png)
     
 4. SeleniumIDE 실행   
     ![image](https://github.com/yjbae-ww/WebAutomatedTest/assets/159973972/41122241-93d7-4cf5-a7c0-03f0354a96b9)
     
 3. 테스트 프로젝트 생성   
     Create a new project 버튼 클릭 > 프로젝트 이름 쓰고 > OK 버튼 클릭
-    ![alt text](image-4.png)
+    ![alt text](./Resource/image-4.png)
 
 4. 테스트 실행   
     Record 버튼 클릭 또는 Ctrl+U 단축키 사용
-    ![alt text](image-6.png)
+    ![alt text](./Resource/image-6.png)
 
 5. 사용할 url 주소 쓰고 테스트 시작하기    
     웹사이트 입력 > start recording 버튼 클릭
-    ![alt text](image-7.png)
+    ![alt text](./Resource/image-7.png)
 
 6. 원하는 테스트를 생성   
     예시) 웹사이트 이동 > 검색창에 python 키워드 입력 > Record 중지 버튼 클릭 > 테스트 이름 입력 > ok 버튼 클릭
-    ![alt text](image-8.png)
+    ![alt text](./Resource/image-8.png)
 
 7. 저장하여 side 파일 생성
-    ![alt text](image-9.png)
+    ![alt text](./Resource/image-9.png)
 
-### 참조
+## 참조
 
 - 노드 생성
     ```
@@ -143,7 +143,7 @@
     C:\Users\ww\Downloads\chromedriver-win64\chromedriver-win64\
     ```
 
-### 참조 링크)   
+## 참조 링크)   
 - [selenium grid 공식 문서](https://www.selenium.dev/documentation/grid/getting_started/)   
 - [selenium grid hub,node 설치](https://www.whatap.io/ko/blog/39/)
 - [chrome에서 selenium IDE 설치 및 실행](https://crazykim2.tistory.com/382)   

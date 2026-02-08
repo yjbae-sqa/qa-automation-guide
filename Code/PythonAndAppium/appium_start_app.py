@@ -6,8 +6,8 @@ options.load_capabilities({
 	"platformName": "Android",
 	"appium:deviceName": "디바이스종류", #예)GM-GXXX 
 	"appium:udid": "device uuid번호", #예)cexxxxxxxx
-	"appium:appPackage":"com.sec.android.app.popupcalculator",
-	"appium:appActivity":"com.sec.android.app.popupcalculator.Calculator",
+	"appium:appPackage":"com.sec.android.app.popupcalculator", #예:계산기앱
+	"appium:appActivity":"com.sec.android.app.popupcalculator.Calculator", #예:계산기앱
 })
 
 driver = webdriver.Remote("http://127.0.0.1:4723/wd/hub", options=options)

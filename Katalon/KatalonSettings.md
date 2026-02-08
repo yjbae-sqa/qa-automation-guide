@@ -1,29 +1,31 @@
-## Katalon 설치
+# Katalon Studio 설치
 
-### 선수 설치
+## 필수 설치
 - JDK 설치
 - Android Studio 설치
 - Node.js 설치
 
-### 환경 변수 설정
+## 환경 변수 설정
 - JAVA_HOME
 - ANDROID_HOME
 
-#### 환경 변수 설정 체크
+## 환경 변수 설정 체크
 
-1.JAVA_HOME 체크 (둘 다 같은 의미)
+1. JAVA_HOME 체크 (둘 다 같은 의미)
 ```
 echo %JAVA_HOME%
 set JAVA_HOME
 ```
 
-2.ANDROID_HOME 체크 (둘 다 같은 의미)
+2. ANDROID_HOME 체크 (둘 다 같은 의미)
 ```
 echo %ANDROID_HOME%
 set ANDROID_HOME
 ```
 
-### Appium 설치
+## Katalon Studio + Appium 사용 시 추가 설치
+> 이미 Appium이 설치되어 있다면 생략
+
 1. 설치
 ```
 npm install -g appium

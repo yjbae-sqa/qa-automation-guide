@@ -23,7 +23,7 @@
     > JAVA_HOME   
     > C:\Program Files\Java\jdk-21
     
-    ![사용자 변수 편집](./Resoucre/image.png)
+    ![사용자 변수 편집](./Resource/image.png)
 
     * 자바 설치 체크
 
@@ -33,15 +33,15 @@
     - [Android Studio Download](https://developer.android.com/studio?hl=ko)   
     - SDK Manager 경로 참조
         > Tools > SDK Manager
-        ![alt text](./Resoucre/image-5.png)   
+        ![alt text](./Resource/image-5.png)   
     - Android SDK Platform-tools 설치 확인 (없으면 설치)   
-    ![alt text](./Resoucre/image-4.png)
+    ![alt text](./Resource/image-4.png)
 
     - ANDROID_HOME 경로 설정 & JAVA_HOME 경로 설정   
-    ![alt text](./Resoucre/image-2.png)
+    ![alt text](./Resource/image-2.png)
 
     - ANDROID_HOME : 안드로이드 SDK 경로   
-    ![alt text](./Resoucre/image-3.png)
+    ![alt text](./Resource/image-3.png)
     - 필요한 Andorid os 별 api 설치   
     - ADB 체크   
         > cmd창에서   
@@ -52,7 +52,7 @@
     - [Appium inspector 설치](https://github.com/appium/appium-inspector/releases)
    
     - Appium Server GUI 실행 > Edit Configurations 선택 > 설정
-    - ![alt text](./Resoucre/image-1.png)
+    - ![alt text](./Resource/image-1.png)
 
 5. Python Client 설치
     > pip install Appium-Python-Client
